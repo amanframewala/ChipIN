@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#87cefa</color>
+    <color name="colorAccent">#87cefa</color>
+    <color name="colorCards">#87cefa</color>
+    <color name="colorButtons">#3F51B5</color>
+    <color name="colorG">#87cefa</color>
+    <color name="finale">#3F51B5</color>
+
+
+</resources>
