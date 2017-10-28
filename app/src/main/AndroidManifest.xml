@@ -18,8 +18,6 @@
         </activity>
         <activity android:name=".Register" />
         <activity android:name=".Home" />
-        <activity android:name=".addTransaction" />
-        <activity android:name=".PendingTransactions" />
         <activity android:name=".AddTransaction" />
         <activity android:name=".PendingTransaction"></activity>
     </application>

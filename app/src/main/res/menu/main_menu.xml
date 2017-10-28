@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/action_add"
+    android:icon="@mipmap/ic_add_white_24dp"
+    android:title="Add Transaction"
+    app:showAsAction="always"/>
+    <item android:title="Settings"
+    android:id="@+id/action_settings"
+    app:showAsAction="never"/>
+    <item android:title="Add Contact"
+        android:id="@+id/action_add_contact"
+        app:showAsAction="never"/>
+    <item android:title="Find Contact"
+        android:id="@+id/action_find_contact"
+        app:showAsAction="never"/>
+    <item android:title="Logout"
+        android:id="@+id/action_logout"
+        app:showAsAction="never"/>
+
+
+
+</menu>

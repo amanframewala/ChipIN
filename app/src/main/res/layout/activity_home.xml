@@ -2,65 +2,59 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.aman.chipin.Home"
-    android:orientation="vertical">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="match_parent"
-        android:layout_height="475dp"
-        android:orientation="vertical">
+        android:layout_height="150dp"
+        app:srcCompat="@color/colorG" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_weight="1"
-            android:scaleType="centerCrop"
-            app:srcCompat="@android:drawable/progress_horizontal" />
+    <EditText
+        android:id="@+id/tvWelcome"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:editable="false"
+        android:ems="10"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/tvWelcome"
-            android:layout_width="match_parent"
+            android:id="@+id/textView2"
+            android:layout_width="250dp"
             android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="TextView"
-            android:textAlignment="center"
-            android:textSize="36sp" />
+            android:layout_above="@+id/button2"
+            android:layout_alignParentStart="true"
+            android:text="Net Account Balance"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Net Account Balance" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/button2"
+            android:layout_alignParentEnd="true"
+            android:text="TextView"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:text="TextView"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="Net Account Balance" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:text="TextView"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="View Pending Transactions" />
+            android:layout_alignParentBottom="true"
+            android:text="View Pending Transactions"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 </LinearLayout>
