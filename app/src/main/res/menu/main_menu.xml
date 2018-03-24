@@ -5,6 +5,9 @@
     android:icon="@mipmap/ic_add_white_24dp"
     android:title="Add Transaction"
     app:showAsAction="always"/>
+    <item android:title="New Group"
+        android:id="@+id/newGroup"
+        app:showAsAction="never"/>
     <item android:title="Settings"
     android:id="@+id/action_settings"
     app:showAsAction="never"/>

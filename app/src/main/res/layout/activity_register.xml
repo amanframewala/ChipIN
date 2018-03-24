@@ -1,95 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context="com.example.aman.chipin.register"
-android:orientation="vertical"
-android:background="@color/colorCards">
-
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Welcome to SpeakUp!"
-    android:textColor="@android:color/black"
-    android:textSize="32sp"
-    android:padding="16dp"
-    android:layout_gravity="center"/>
-
-<ImageView
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"/>
+    android:layout_height="match_parent">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Name:"
-    android:textColor="@android:color/black"
-    android:textSize="24sp"
-    android:paddingLeft="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-<EditText
-    android:layout_width="318dp"
-    android:id="@+id/nameField"
-    android:layout_height="wrap_content"
-    android:hint="Your name here"
-    android:textSize="20sp"
-    android:padding="10dp"
-    android:layout_marginLeft="16dp"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="200dp"
+            android:textColor="@color/colorBlack"
+            />
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="E-mail ID:"
-    android:textColor="@android:color/black"
-    android:textSize="24sp"
-    android:paddingLeft="16dp"/>
+        <EditText
+            android:id="@+id/nameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorBlack"
+            android:inputType="textPersonName"
+            android:hint="Enter Name" />
 
-<EditText
-    android:layout_width="318dp"
-    android:layout_height="wrap_content"
-    android:hint="xyz@example.com"
-    android:textSize="20sp"
-    android:padding="10dp"
-    android:layout_marginLeft="16dp"
-    android:id="@+id/emailField"/>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="E-mail:" />
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Password:"
-    android:textColor="@android:color/black"
-    android:textSize="24sp"
-    android:paddingLeft="16dp"/>
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="abcd@xyz.com"
+            android:inputType="textEmailAddress" />
 
-<EditText
-    android:layout_width="324dp"
-    android:layout_height="wrap_content"
-    android:hint="(Min. 6 characters)"
-    android:textSize="20sp"
-    android:padding="10dp"
-    android:ems="10"
-    android:inputType="textPassword"
-    android:layout_marginLeft="16dp"
-    android:id="@+id/passwordField"/>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:layout_weight="1"
-        android:id="@+id/registerBtn"
-        android:background="@color/colorCards"/>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Password:"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1"
+                android:layout_marginLeft="0dp"
+                android:text="(minimum 8 characters)" />
+        </LinearLayout>
 
-</LinearLayout>
-</LinearLayout>
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="250dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="68dp"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
